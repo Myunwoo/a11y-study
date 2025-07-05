@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>시맨틱 Form 실습</title>
+</head>
+<body>
+  <main>
+    <h1>회원 가입</h1>
+    <form>
+      <fieldset>
+        <legend>기본 정보</legend>
+
+        <div>
+          <label for="username">이름</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+
+        <div>
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="password" id="password" name="password" required aria-describedby="pw-hint" />
+          <small id="pw-hint">영문/숫자 포함 8자 이상 입력해 주세요</small>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>성별 선택</legend>
+
+        <div>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">남성</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">여성</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">가입하기</button>
+    </form>
+  </main>
+</body>
+</html>

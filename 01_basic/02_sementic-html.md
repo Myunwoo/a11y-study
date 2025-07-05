@@ -36,6 +36,19 @@
 - div, span이 아니라 의미 있는 태그부터 고려하자
 스타일링 때문에 시맨틱 태그가 불편할 수 있으나 최대한 유지
 구조가 명확하면 접근성과 SEO가 모두 향상된다
+- 제목 계층 (h1 ~ h6) 제목은 계층 구조를 명확히 해야함
+- h1 → h2 → h3 순서대로 사용하고, 시각적으로 크기를 조절하더라도, 순서는 유지하는 편이 좋음
+3. 폼 요소의 label과 input은 for와 id로 연결해야 함. 스크린 리더는 이 정보를 함께 읽기 때문
+```
+<label for="email">이메일</label>
+<input type="email" id="email" name="email" />
+```
+
+---
+
+## 공부 내용 실습 HTML
+
+- 02_html-practice/01_semantic-form.html
 
 ---
 
